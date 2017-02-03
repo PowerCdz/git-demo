@@ -1,0 +1,97 @@
+/* 页面初始化样式 */
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;   /* 清除浏览器高亮效果 */
+    -webkit-box-sizing: border-box;             /*以你的border开始计算你的宽度*/
+}
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei",sans-serif;  /* 第二个是手机默认的字体 */
+    color: #000;
+    background-color: #f5f5f5;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style: none;
+}
+input,textarea{
+    border: none;       /* 清除默认边框 */
+    resize: none;       /* 禁止伸缩 */
+    outline: none;      /* 清除默认选中效果框(蓝色光环) */
+    -webkit-appearance: none;   /* 清除浏览器默认样式 */
+}
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after{
+    content: ' ';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+/* /页面初始化样式 */
+
+[class^='icon-']{
+    background: url("../images/sprites.png") no-repeat;
+    background-size: 200px 200px;
+}
+
+
+/* 头部样式 */
+.jd-search h4{
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 44px;
+    text-align: center;
+    width: 100%;
+    font-weight: inherit;
+}
+.jd-search{
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    background: url(../images/header-bg.png) repeat-x;
+    background-size: 1px 44px;
+    border-bottom: 1px solid #f5f5f5;
+}
+.jd-search .icon-return{
+    width: 20px;
+    height: 20px;
+    margin: 12px 10px;
+    background-position: -20px 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.jd-search form{
+    height: 30px;
+    padding: 0 40px;
+}
+.jd-search form input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #bfbfbf;
+    margin-top: 7px;
+    padding: 0 10px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.jd-search .icon-menu{
+    background-position: -60px 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 12px 10px 0 0;
+}
+/* /头部样式 */
+
+

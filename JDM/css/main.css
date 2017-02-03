@@ -1,0 +1,259 @@
+/* 自己自定义样式 */
+.jd-layout{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+/* 京东头部样式 */
+.jd-header{
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.jd-header .jd-header-box{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    height: 40px;
+    background: rgba(201,21,35,0);
+}
+.jd-header .jd-header-box .icon-logo{
+    width: 60px;
+    height: 36px;
+    background-position: 0 -103px;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 4px;
+}
+.jd-header .jd-header-box form{
+    height: 40px;
+    padding: 0 50px 0 75px;
+}
+.jd-header .jd-header-box form input{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding-left: 40px;
+    padding-right: 10px;
+    color: #797979;
+    font-size: 14px;
+}
+.jd-header .jd-header-box form .icon-search{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-position: -60px -109px;
+    position: absolute;
+    left: 85px;
+    top: 10px;
+}
+.jd-header .jd-header-box .login{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    width: 50px;
+    text-align: center;
+}
+/* /京东头部样式 */
+
+
+/* 轮播图样式 */
+.jd-banner{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.jd-banner .jd-imgs{
+    width: 800%;
+}
+.jd-banner .jd-imgs li{
+    width: 12.5%;
+    float: left;
+}
+.jd-banner .jd-imgs li img{
+    width: 100%;
+    display: block;
+}
+.jd-banner .jd-btns{
+    width: 118px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    margin-left: -59px;
+}
+.jd-banner .jd-btns li{
+    float: left;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+.jd-banner .jd-btns li + li{
+    margin-left: 10px;
+}
+.jd-banner .jd-btns li.active{
+    background-color: #fff;
+}
+/* /轮播图样式 */
+
+
+/* 导航样式 */
+.jd-nav{
+    width: 100%;
+    height: auto;
+    padding: 11px 0;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #fff;
+}
+.jd-nav ul{
+    height: 138px;
+    padding: 0 3.125%;
+}
+.jd-nav ul li{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.jd-nav ul li img{
+    width: 40px;
+    height: 40px;
+}
+.jd-nav ul li p{
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 12px;
+}
+/* /导航样式 */
+
+
+/* 商品列表样式 */
+.jd-product{
+    width: 100%;
+}
+.jd-product .product-box{
+    position: relative;
+    background-color: #fff;
+    margin: 5px;
+}
+.jd-product .product-box .product-nav{
+    height: 30px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.jd-product .product-box .product-nav img{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+.jd-product .product-box .product-nav h4{
+    float: left;
+    line-height: 30px;
+    font-size: 15px;
+    color: #c91523;
+    font-weight: inherit;
+}
+.jd-product .product-box .product-nav .product-timer{
+    float: left;
+    margin-left: 10px;
+    height: 20px;
+    margin-top: 5px;
+}
+.jd-product .product-box .product-nav .product-timer span{
+    padding: 0 4px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+.jd-product .product-box .product-nav .product-timer span:nth-child(3),.jd-product .product-box .product-nav .product-timer span:nth-child(6){
+    background-color: transparent;
+    color: #333;
+    margin: 0 -3px;
+}
+.jd-product .product-box .product-nav > a{
+    float: right;
+    line-height: 30px;
+    color: #333;
+ }
+.jd-product .product-box .product-content{
+    width: 100%;
+    overflow: auto;
+}
+.jd-product .product-box .product-content ul{
+    padding: 10px 0;
+    overflow: auto;
+}
+.jd-product .product-box .product-content ul li{
+    width: 33.3%;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    margin-top: 10px;
+}
+.jd-product .product-box .product-content ul li img{
+    width: 60%;
+    border: 0;
+    vertical-align: middle;
+}
+.jd-product .product-box .product-content ul li + li{
+    border-left: 1px solid #f5f5f5;
+}
+.jd-product .product-box .product-content .price{
+    color: #d8505c;
+}
+.jd-product .product-box h3{
+    line-height: 32px;
+    padding-left: 15px;
+    color: #666;
+    font-size: 14px;
+    font-weight: inherit;
+}
+.jd-product .product-box h3::before{
+    height: 12px;
+    width: 3px;
+    display: block;
+    content: " ";
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    background: #d8505c;
+}
+.product-content .ban-img {
+    padding: 5px;
+}
+.product-content .ban-img img{
+    width: 100%;
+}
+.jd-product .product-box .product-content .product-left{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    border-right: 1px solid #f5f5f5;
+}
+.jd-product .product-box .product-content .product-right{
+    float: right;
+    width: 50%;
+}
+.jd-product .product-box .product-content .product-right img:nth-child(1){
+    border-bottom: 1px solid #f5f5f5;
+}
+.jd-product .product-box .product-content .product-right img,.jd-product .product-box .product-content .product-left img{
+    width: 100%;
+    vertical-align: top;
+}
+/* /商品列表样式 */
